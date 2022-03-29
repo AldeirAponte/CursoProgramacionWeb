@@ -1,6 +1,0 @@
-¿Es necesario siempre poner los label e input dentro de una etiqueta <p>?
-
-<p>
-    <label for="nom">Nombre:</label>
-    <input type="text" name="nombre" id="nom" />
-</p>

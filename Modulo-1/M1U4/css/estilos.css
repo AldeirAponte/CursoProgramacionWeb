@@ -1,0 +1,33 @@
+/* color para el titulo y alineacion al centro */
+h1 {
+    text-align: center;
+    color: rgb(0, 140, 196);
+}
+/* color para el subtitulo de Formulario */
+#formu {
+    color: rgb(0, 140, 196);
+}
+/* Margen para la imagen */
+img {
+    margin: 30px;
+}
+/* color para los subtitulos */
+strong {
+    color: rgb(0, 96, 134);
+}
+/* estilos para los parrafos */
+#p1 {
+    margin-right: 62em;
+    background-color: rgba(0, 179, 60, 0.425);
+    font-family: cursive;
+    margin-left: 20px;
+}
+/* cambio de tipo letra a la lista desordenada */
+ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* color y aumento de tamaño para el link que lleva a Formulario */
+a:hover {
+    color: red;
+    font-size: 20px;
+}

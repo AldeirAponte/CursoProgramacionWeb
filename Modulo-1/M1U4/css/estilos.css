@@ -3,7 +3,7 @@ h1 {
     text-align: center;
     color: rgb(0, 140, 196);
 }
-/* color para el subtitulo de Formulario */
+/* color para el subtitulo de Formulario, ejemplo de ID*/
 #formu {
     color: rgb(0, 140, 196);
 }
@@ -15,8 +15,8 @@ img {
 strong {
     color: rgb(0, 96, 134);
 }
-/* estilos para los parrafos */
-#p1 {
+/* estilos para los parrafos, ejemplo de class*/
+.p1, .p2, .p3 {
     margin-right: 62em;
     background-color: rgba(0, 179, 60, 0.425);
     font-family: cursive;

@@ -1,0 +1,64 @@
+/* prueba de gradients */
+.principal {
+    background: #fefefe;
+    background: linear-gradient(52deg,#fefefe 0%, #6f6f6f 80%);
+    background: -webkit-linear-gradient(52deg,#fefefe 0%, #6f6f6f 80%);
+    background: -moz-linear-gradient(52deg,#fefefe 0%, #6f6f6f 80%);
+}
+
+/* color para el titulo y alineacion al centro */
+h1 {
+    text-align: center;
+    color: rgba(43, 58, 194, 0.849);
+}
+
+span {
+    font-size: 20px;
+}
+
+/* color para el subtitulo de Formulario, ejemplo de ID*/
+#formu {
+    color: rgba(43, 58, 194, 0.849);
+}
+/* Margen para la imagen, y cambio de forma en las esquinas*/
+img {
+    margin: 30px;
+    border-radius: 50px 0 50px 0;
+}
+/* color para los subtitulos */
+strong {
+    color: rgb(0, 96, 134);
+}
+/* estilos para los parrafos, ejemplo de class*/
+.p1 {
+    margin-right: 62em;
+    background-color: rgba(0, 179, 60, 0.425);
+    font-family: cursive;
+    margin-left: 20px;
+}
+/* cambio de tipo letra a la lista desordenada */
+ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ejemplos de columnas */
+div {
+    width: 500px;
+    margin-left: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 5px solid;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.p2 {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* color y aumento de tamaño para el link que lleva a Formulario */
+a:hover {
+    color: red;
+    font-size: 20px;
+}

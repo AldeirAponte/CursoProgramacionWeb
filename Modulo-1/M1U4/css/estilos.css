@@ -16,7 +16,7 @@ strong {
     color: rgb(0, 96, 134);
 }
 /* estilos para los parrafos, ejemplo de class*/
-.p1, .p2, .p3 {
+.p1 {
     margin-right: 62em;
     background-color: rgba(0, 179, 60, 0.425);
     font-family: cursive;

@@ -1,0 +1,114 @@
+/* EJEMPLO 1 */
+.contenedor1 {
+    width: 25rem;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#uno {
+    background-color: red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dos {
+    background-color: blue;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tres {
+    background-color: green;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* EJEMPLO 2 */
+.contenedor2 {
+    height: 20rem;
+    border: 2px solid black;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 30rem;
+    margin-bottom: 3rem;
+}
+
+#primero {
+    background-color: red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#segundo {
+    background-color: blue;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tercero {
+    background-color: green;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* EJEMPLO 3 */
+.contenedor3 {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#uno1 {
+    background-color: red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dos2 {
+    background-color: blue;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tres3 {
+    background-color: green;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

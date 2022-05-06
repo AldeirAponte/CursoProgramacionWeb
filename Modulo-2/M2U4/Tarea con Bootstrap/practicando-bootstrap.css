@@ -1,0 +1,62 @@
+/* imagen en el NavBar */
+#logo {
+    border-radius: 15px;
+    margin-right: 4rem;
+}
+/* items del NavBar */
+.navegacion {
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+/* margen para el item desabilitado */
+.cabecera li:nth-child(4) {
+    margin: 0.5rem;
+}
+/* animacion sobre los items */
+.navegacion:hover {
+    background-color: rgb(131, 131, 131);
+}
+/* titulo */
+h1 {
+    text-align: center;
+    color: black;
+}
+/* fila 1,primera columna */
+.coluno {
+    background-color: rgba(147, 255, 219, 0.842);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/* fila 2, primera columna columna */
+.coldos {
+    background-color: rgb(255, 215, 136);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/* fila 2, segunda columna */
+.coltres {
+    background-color: rgb(255, 252, 100);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+body {
+    background-color: rgb(189, 189, 189);
+}
+/* pie de pagina */
+.footer {
+    height: 3rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.836);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

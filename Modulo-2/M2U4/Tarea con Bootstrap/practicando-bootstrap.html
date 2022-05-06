@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link del Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- link de mi CSS -->
+    <link rel="stylesheet" href="practicando-bootstrap.css">
+    <title>Practicando-Bootstrap</title>
+</head>
+
+<body>
+    <!-- cabecera para el NavBar -->
+    <header class="cabecera">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <img id="logo" src="https://via.placeholder.com/60x60" alt="LOGO.jpg">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item navegacion">
+                            <a class="nav-link" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link" aria-current="page" href="#">FOTOS</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item navegaciond">
+                            <a class="nav-link disabled">PROXIMAMENTE</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- contenedor principal con max-Width -->
+    <div class="container">
+        <h1>Titulo</h1>
+        <!-- columnas para el texto, fila 1-->
+        <div class="row">
+            <div class="col coluno">
+                <h2>Introduccion</h2>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam, aperiam amet beatae sint magnam, incidunt modi, adipisci harum asperiores tempora dolor nostrum? Exercitationem laboriosam hic cumque voluptatem, modi sapiente!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam, aperiam amet beatae sint magnam, incidunt modi, adipisci harum asperiores tempora dolor nostrum? Exercitationem laboriosam hic cumque voluptatem, modi sapiente!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam, aperiam amet beatae sint magnam, incidunt modi, adipisci harum asperiores tempora dolor nostrum? Exercitationem laboriosam hic cumque voluptatem, modi sapiente!</p>
+                </div>
+            </div>
+        </div>
+        <!-- fin fila 1 -->
+
+        <!-- fila 2 -->
+        <div class="row">
+            <div class="col-9 coldos">
+                <h2>Productos</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/550x150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 coltres">
+                <h2>Envianos tu Consulta</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellidos:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Direccion de Email:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribenos tu Consulta:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <!-- fin fila 2 -->
+
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <small>&copy;<b>Probando Bootstrap-2022</b></small>
+        </div>
+    </footer>
+
+    <!-- link de JS, algunas funciones del Bootstrap funcionan con JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

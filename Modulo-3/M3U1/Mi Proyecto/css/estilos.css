@@ -1,0 +1,175 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #acacac;
+    background: linear-gradient(90deg,#acacac 0%, #c5c5c5 80%);
+    background: -webkit-linear-gradient(90deg,#acacac 0%, #c5c5c5 80%);
+    background: -moz-linear-gradient(90deg,#acacac 0%, #c5c5c5 80%);
+}
+
+header {
+    background-color: #333;
+}
+
+/* Logo y Titulo */
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilos para el Logo */
+.cabecera img {
+    border-radius: 20%;
+    max-width: 13%;
+    margin: 1rem 0 0.5rem;
+}
+
+/* estilos para el Titulo */
+.caja-titulo {
+    margin: 0 17% 0 10%;
+}
+
+.caja-titulo h1 {
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: auto;
+    text-shadow: 2px 4px 3px #b1b1b1;
+}
+
+
+/* tamaño para toda la pagina */
+.contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* estilos para la Botonera */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav li {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+nav ul li a:hover {
+    background-color: rgb(129, 129, 129);
+    border-radius: 10px;
+}
+
+nav ul li a.activo {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* pagina INICIO */
+.caja {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.intro {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 60%;
+    box-sizing: border-box;
+}
+
+.fondo {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fondo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.reseña {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fondodos {
+    margin: 10px;
+}
+
+.fondodos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    font-style: italic;
+    padding: 0.1rem 0;
+    margin-top: 2rem;
+}
+
+/* pagina NOSOTROS */
+.historia {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1.5rem auto ;
+    padding: 5px;
+}
+
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 48%;
+    padding: 0.5rem;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.persona img {
+    border-radius: 10px;
+    max-width: 25%;
+}
+
+.persona h3 {
+    font-style: italic;
+    margin: 0;
+}
+
+.persona p {
+    font-size: 10px;
+    margin: 5px;
+}
+
+

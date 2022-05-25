@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea con JavaScript</title>
+</head>
+
+<!-- Crear el código que reciba como parámetro un array de números y devuelva el mayor. -->
+<body>
+
+    <h3>Ejercicio 2:</h3>
+
+    <script>
+        //VARIABLES
+        var numeros = [];
+        var tamaño_array;
+        var mayor;
+
+        //PETICION AL USUARIO
+        tamaño_array = prompt('ingresa el tamaño que tendra el Array','');
+
+        //CREANDO EL ARRAY
+        for (var i = 0; i < tamaño_array; i++) {
+            numeros[i] = prompt('ingresa el número posicion [' +(i+1)+ ']','');
+        }
+
+        document.write('el tamaño del Array es: ' + tamaño_array + '<br>');
+        document.write('<br>');
+
+        //MOSTRAMOS EL ARRAY
+        document.write('El Array es: <br>')
+
+        for (var i = 0; i < numeros.length; i++) {
+            document.write('posicion['+(i+1)+']=' + ' [' + numeros[i] + '] <br>');
+        }
+
+        //SELECCIONANDO EL NUMERO MAYOR
+        mayor = 0;
+        for (var j = 0; j < numeros.length; j++) {
+            if (numeros[j] > mayor) {
+                mayor = numeros[j];
+            }
+        }
+
+        document.write('<br>');
+        document.write('El número Mayor es: ' + mayor);
+
+    </script>
+    
+    
+</body>
+</html>

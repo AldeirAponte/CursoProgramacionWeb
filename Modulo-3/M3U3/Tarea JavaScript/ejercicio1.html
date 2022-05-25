@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea con JavaScript</title>
+</head>
+
+<!-- Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+
+0 a 1000 metros = pie
+
+1000 a 10000 metros = bicicleta
+
+10000 a 30000 metros = colectivo
+
+30000 a 100000 metros = auto
+
++100000 = avion -->
+<body>
+
+    <h3>Ejercicio 1:</h3>
+
+    <script>
+        // VARIABLES
+        var nombre;
+        var distancia;
+
+        //PETICION AL USUARIO
+        nombre = prompt('ingrese su nombre:', '');
+        distancia = prompt('ingrese la distancia:', '');
+
+        //PROCESO DE SELECCION DE TRANSPORTE
+        if ((distancia >= 0) && (distancia <= 1000)) {
+            document.write('Hola ' + nombre + ', puedes llegar a tu destino a "Pie"');
+        } else if ((distancia >= 1000) && (distancia <= 10000)) {
+            document.write('Hola ' + nombre + ', puedes llegar a tu destino en "Bicicleta"');
+        } else if ((distancia >= 10000) && (distancia <= 30000)) {
+            document.write('Hola ' + nombre + ', puedes llegar a tu destino en "Colectivo"');
+        } else if ((distancia >= 30000) && (distancia <= 100000)) {
+            document.write('Hola ' + nombre + ', puedes llegar a tu destino en "Auto"');
+        } else if ((distancia >= 100000)) {
+            document.write('Hola ' + nombre + ', puedes llegar a tu destino en "Avion"');
+        } else if(distancia<0) {
+            document.write('Hola ' + nombre + ', no puedes introducir una distancia "NEGATIVA!!"');
+        }
+
+    </script>
+
+</body>
+</html>

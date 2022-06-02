@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de caracteres</title>
+</head>
+
+<body>
+    <!-- Ejercicio-2 -->
+    <!-- Programar un contador de caracteres para un textarea. -->
+    <style>
+        .formulario p {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .formulario input {
+            position: relative;
+            left: 6.2rem;
+            width: 12%;
+            height: 40px;
+        }
+    </style>
+
+    <h1>Contador de Caracteres para el textarea</h1>
+
+    <form action="" method="" name="formu" class="formulario">
+        <p>
+            <label for="consulta"><b>Contador:</b></label>
+            <textarea name="textarea" rows="5" placeholder="Escribe aquí..."></textarea>
+        </p>
+        <p>
+            <input type="submit" onclick="contarCaracteres()" value="Enviar">
+        </p>
+    </form>
+
+    <script>
+        function contarCaracteres() {
+            alert("Los caracteres ingresados son: " + document.formu.textarea.value.length);
+        }
+    </script>
+    
+</body>
+</html>

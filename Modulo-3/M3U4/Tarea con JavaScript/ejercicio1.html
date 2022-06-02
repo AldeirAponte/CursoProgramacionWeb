@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando el Fondo de Color</title>
+</head>
+
+<body>
+    <style>
+        .caja {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            margin-bottom: 5px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .caja1 {
+            background-color: red;
+        }
+        .caja2 {
+            background-color: blue;
+        }
+        .caja3 {
+            background-color: green;
+        }
+    </style>
+    <!-- Crear un documento html con 3 cuadrados que, al ser clickeados, 
+        cambien el color de fondo del documento. Cada cuadrado debera 
+        tener un color distinto. -->
+
+    <div class="caja caja1" onclick="cambioColor('rojo')">Rojo</div>
+    <div class="caja caja2" onclick="cambioColor('azul')">Azul</div>
+    <div class="caja caja3" onclick="cambioColor('verde')">Verde</div>
+
+    <script>
+        var fondo = document.querySelector('body');
+        var color = fondo.style.backgroundColor = '';
+
+        function cambioColor(click) {
+            switch (click) {
+                case 'rojo':
+                    if ((color == '') || (color == 'blue') || (color == 'green')) {
+                        color = fondo.style.backgroundColor = 'red';
+                    } else if (color == 'red'){
+                        color = fondo.style.backgroundColor = '';
+                    }
+                break;
+                case 'azul': 
+                    if ((color == '') || (color == 'red') || (color == 'green')) {
+                        color = fondo.style.backgroundColor = 'blue';
+                    } else if (color == 'blue'){
+                        color = fondo.style.backgroundColor = '';
+                    }
+                break;
+                case 'verde':
+                    if ((color == '') || (color == 'blue') || (color == 'red')) {
+                        color = fondo.style.backgroundColor = 'green';
+                    } else if (color == 'green'){
+                        color = fondo.style.backgroundColor = '';
+                    }
+                break;
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

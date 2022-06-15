@@ -1,3 +1,5 @@
+import '../styles/components/pages/normalize.css';
+import '../styles/components/pages/Estilos.css';
 import React from "react";
 
 const ContactoPage = (props) => {

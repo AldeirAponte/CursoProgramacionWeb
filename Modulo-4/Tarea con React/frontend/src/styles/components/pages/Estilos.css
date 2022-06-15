@@ -1,0 +1,250 @@
+/* INICIO */
+.contenedor-dos {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-dos p {
+    font-size: 14px;
+}
+
+.caja {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.intro {
+    background-color: rgba(223, 220, 220, 0.738);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 60%;
+    box-sizing: border-box;
+}
+
+.fondo {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fondo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.reseña {
+    background-color: rgba(223, 220, 220, 0.738);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fondodos {
+    margin: 10px;
+}
+
+.fondodos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* NOSOTROS */
+.historia {
+    background-color: rgba(223, 220, 220, 0.738);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1.5rem auto ;
+    padding: 5px;
+}
+
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    background-color: rgba(223, 220, 220, 0.738);
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 48%;
+    padding: 0.5rem;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.persona img {
+    border-radius: 10px;
+    max-width: 25%;
+}
+
+.persona h3 {
+    font-style: italic;
+    margin: 0;
+}
+
+.persona p {
+    font-size: 10px;
+    margin: 5px;
+}
+
+/* COLECCION */
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.columna {
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 340px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(219, 217, 217);
+    box-sizing: border-box;
+}
+
+.columna h3 {
+    text-align: center;
+}
+
+.columna p {
+    font-size: 12px;
+}
+
+.columna img {
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+/* CONTACTO */
+.contacto {
+    max-width: 80%;
+    margin: 2rem auto 0;
+    padding: 1rem;
+}
+
+.metodo-uno {
+    background-color: rgb(219, 217, 217);
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.formulario {
+    max-width: 85%;
+    margin: 2rem auto;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p input,
+.formulario p textarea {
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario label {
+    display: flex;
+    align-items: center;
+    min-width: 20%;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 19.7%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(88, 88, 88);;
+}
+
+.metodo-dos {
+    background-color: rgb(219, 217, 217);
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.direccion {
+    max-width: 85%;
+    margin: 2rem auto;
+}
+
+.direccion h4 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30%;
+}
+
+.direccion span {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.metodo-tres {
+    background-color: rgb(219, 217, 217);
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 2rem auto 0;
+}
+
+.canales {
+    max-width: 90%;
+    margin: 0.5rem auto;
+    display: flex;
+}
+
+.canal {
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.canal img {
+    width: 25%;
+    border-radius: 80%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.canal img:hover {
+    /* border: 1px solid black; */
+    transform: scale(130%);
+    font-weight: 900;
+}

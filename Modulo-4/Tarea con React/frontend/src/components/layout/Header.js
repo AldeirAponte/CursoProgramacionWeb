@@ -1,12 +1,14 @@
+import '../../styles/components/pages/normalize.css';
+import '../../styles/components/layout/Layout.css';
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
     return (
         <header>
             <div className="cabecera">
-                <div className="imagen">
-                    <img src="img/inicio/logo1.jpg" height="100" alt="logo" />
+                <div className="logo">
+                    <img src="img/inicio/logo1.jpg" alt="Logo" />
                 </div>
                 <div className="contenedor">
                     <div className="titulo">
@@ -14,10 +16,10 @@ const Header = (props) => {
                     </div>
                     <nav>
                         <ul>
-                            <li className="activo"><Link to="/">Inicio</Link></li>
-                            <li><Link to="nosotros">Nosotros</Link></li>
-                            <li><Link to="coleccion">Colección</Link></li>
-                            <li><Link to="contacto">Contacto</Link></li>
+                            <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : undefined }>Inicio</NavLink></li>
+                            <li><NavLink to="/nosotros" className={({ isActive }) => isActive ? "activo" : undefined }>Nosotros</NavLink></li>
+                            <li><NavLink to="/coleccion" className={({ isActive }) => isActive ? "activo" : undefined }>Colección</NavLink></li>
+                            <li><NavLink to="/contacto" className={({ isActive }) => isActive ? "activo" : undefined }>Contacto</NavLink></li>
                         </ul>
                     </nav>
                 </div>

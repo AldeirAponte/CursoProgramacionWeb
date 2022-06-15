@@ -1,3 +1,5 @@
+import '../../styles/components/pages/normalize.css';
+import '../../styles/components/layout/Layout.css';
 import React from "react";
 
 const Footer = (props) => {

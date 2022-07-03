@@ -10,7 +10,7 @@ var session = require('express-session');
 
 
 // declaramos la variable para el login
-var loginRouter = require('./routes/admin/login'); // login.js
+//var loginRouter = require('./routes/admin/login'); // login.js
 
 var app = express();
 
@@ -32,22 +32,13 @@ app.use(session({
 }));
 
 // accionamos la variable declarada
-app.use('/admin/login', loginRouter); 
-
-
-// metodo post, se envia la informacion
-app.post('/ingresar', function (req, res) {
-  if (req.body.nombre) {
-    req.session.nombre = req.body.nombre
-  }
-  res.redirect('/');
-});
+//app.use('/admin/login', loginRouter); 
 
 
 // metodo get, obtenemos la info
-app.get('/', function (req, res) {
+app.get('/admin/login', function (req, res) {
   var conocido = Boolean(req.session.nombre);
-
+  
   res.render('admin/login', {
     title: 'Sesiones en Express.js',
     conocido: conocido,
@@ -55,15 +46,19 @@ app.get('/', function (req, res) {
   });
 });
 
+// metodo post, se envia la informacion
+app.post('/ingresar', function (req, res) {
+  if (req.body.nombre) {
+    req.session.nombre = req.body.nombre
+  }
+  res.redirect('/admin/login');
+});
 
 // metodo para salir
 app.get('/salir', function (req, res) {
   req.session.destroy();
   res.redirect('/admin/login');
 });
-
-
-
 
 
 

@@ -1,0 +1,184 @@
+body {
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del layout */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 5px;
+}
+
+img {
+    max-width: 6vw;
+    min-width: 8vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 5vw;
+    text-shadow: 2px 4px 3px #b1b1b1;
+}
+/* fin estilos de layout */
+
+/* Estilos de login */
+.contenido {
+    background-color: rgb(157, 157, 157);
+    width: 35%;
+    border-radius: 15px;
+    margin-top: 5rem;
+    padding: 25px 20px 15px;
+}
+
+/* div contenedor de <i> e <input> */
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 97%;
+}
+
+/* boton del formulario login */
+.boton {
+    max-width: 20%;
+    min-width: 14vh;
+    position: relative;
+    left: 1.5rem;
+    background-color: #333;
+    border-color: #fffbfb; 
+}
+
+.boton:hover {
+    background-color: rgb(105, 105, 105);
+    border-color: #333;
+    color: #333;
+    /* font-weight: 500; */
+}
+/* fin estilos de login */
+
+/* Estilos para coleccion */
+.admin {
+    width: 20%;
+    margin: -5.5rem 0rem 1rem 68rem;
+    padding: 25px 20px 15px;
+}
+
+/* coleccion */
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    padding: 15px 0 0 0;
+    justify-content: center;
+}
+
+.columna {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 8px;
+    margin: 8px;
+    text-align: justify;
+    background-color: rgb(219, 217, 217);
+    animation: mianimacion ease 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    15% {box-shadow: 0 0 20px #bfbfbf;}
+    30% {box-shadow: 0 0 20px #333;}
+    50% {box-shadow: 0 0 20px #bfbfbf;}
+    70% {box-shadow: 0 0 20px #333;}
+    100% {box-shadow: 0 0 20px #bfbfbf;}
+ }
+
+.columna h3 {
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.columna p {
+    font-size: 12px;
+}
+
+.columna img {
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: 10px;
+    width: 322px;
+    height: 200px;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.persona {
+    color: white;
+}
+
+.editar-borrar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar-borrar a {
+    border-radius: 30%;
+}
+
+/* fin estilos de coleccion */
+
+/* Esilos para pagina Agregar */
+.contenido-agregar {
+    margin: 5rem 24rem auto;
+}
+
+.agregar-columna h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.agregar-columna {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 25px;
+    margin: 8px;
+    text-align: justify;
+    background-color: rgb(219, 217, 217);
+}
+/* fin de la pagina Agregar */
+
+/* Estilos de la pagina Editar */
+.formulario-editar {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 25px;
+    margin: 8px;
+    text-align: justify;
+    background-color: rgb(219, 217, 217);
+}
+
+.form-group {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+/* pie de pagina */
+footer {
+    background-color: #333;
+    color: #b1b1b1;
+    text-align: center;
+    font-style: italic;
+    padding: 0.1rem 0;
+    line-height: 35px;
+    margin-top: auto;
+}

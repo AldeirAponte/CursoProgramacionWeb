@@ -1,0 +1,22 @@
+<div class="container contenido-agregar">
+    <div class="col-6 offset-3 agregar-columna">
+        <h4>Agregar Nuevo Item a Colección</h4>
+        <form action="/admin/coleccion/agregar" method="post">
+            <div class="agregar-columna">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Título" name="titulo">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Información" name="informacion"></textarea>
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Aqui subiria la img" name="imagen"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>

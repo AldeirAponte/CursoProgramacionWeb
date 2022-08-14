@@ -57,6 +57,13 @@ img {
     /* font-weight: 500; */
 }
 
+/* pagina administrador */
+.admin {
+    width: 20%;
+    margin: 24rem 0rem 1rem 68rem;
+    padding: 25px 20px 15px;
+}
+
 /* pie de pagina */
 footer {
     background-color: #333;

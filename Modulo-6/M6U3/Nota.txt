@@ -1,0 +1,7 @@
+Usuarios registrados en la Base de Datos para probar:
+
+usuario: aldeir
+*******: 123456
+
+usuario: flavia
+*******: 1234  

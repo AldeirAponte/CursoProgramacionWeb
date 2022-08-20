@@ -1,0 +1,33 @@
+<div class="container" style="margin-top: 3rem ;">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h4>Editar un Item de Colección</h4>
+      <form action="/admin/coleccion/editar" method="post" class="formulario-editar" enctype="multipart/form-data">
+        <input type="hidden" value="{{itemColeccion.id}}" name="id">
+        {{!-- titulo --}}
+        <div class="form-group">
+          <label for="">Titulo</label>
+          <input type="text" class="form-control" name="titulo" value="{{itemColeccion.titulo}}">
+        </div>
+        {{!-- informacion --}}
+        <div class="form-group">
+          <label for="">Información</label>
+          <textarea type="text" class="form-control" name="informacion">{{itemColeccion.informacion}}</textarea>
+        </div>
+        {{!-- imagen --}}
+        <div class="form-group">
+          {{!-- ojo aqui al textarea no se le puede poner el atributo value --}}
+          <label for="">Imagen</label>
+          <input type="file" class="form-control" name="imagen" />
+          <label><input type="checkbox" name="img_delete" value="1">Eliminar imagen actual?</label>
+          <input type="hidden" name="img_original" value="{{itemColeccion.img_id}}" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+      {{#if error}}
+      <p>{{message}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

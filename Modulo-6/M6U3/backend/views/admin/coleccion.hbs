@@ -1,0 +1,35 @@
+<main>
+  {{!-- boton logout --}}
+  <div class="admin">
+    <div class="row">
+      <p class="text-end persona"><< {{persona}} >><a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a></p>
+    </div>
+  </div>
+  {{!-- listado de colección y boton de agregar a colección --}}
+  <div class="row">
+    <div class="col-7 text-center">
+      <h3>Listado de Colección</h3>
+    </div>
+    <div class="col-5 text-center">
+      <a class="btn btn-success" href="/admin/coleccion/agregar"><i class="fa fa-plus" aria-hidden="true"></i>Agregar a Colección</a>
+    </div>
+  </div>
+  {{!-- Item de coleccion --}}
+  <div class="columnas">
+    {{#each coleccion}}
+    <div class="columna">
+      <div class="editar-borrar">
+        <a class="btn btn-secondary" href="/admin/coleccion/editar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+        <a class="btn btn-secondary" href="/admin/coleccion/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+      </div>
+      <hr>
+      <h3>{{titulo}}</h3>
+      <hr>
+      <p>{{informacion}}</p> 
+      <div id="img">
+        {{{imagen}}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</main>

@@ -1,0 +1,42 @@
+/* COLECCIONITEM */
+
+/* estos son estilos especificos para la columnas */
+
+.columna {
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 8px;
+  margin: 8px;
+  background-color: rgb(219, 217, 217);
+  animation: mianimacion ease 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+  15% { box-shadow: 0 0 20px #bfbfbf; }
+
+  30% { box-shadow: 0 0 20px #333;}
+
+  50% { box-shadow: 0 0 20px #bfbfbf; }
+
+  70% { box-shadow: 0 0 20px #333; }
+
+  100% { box-shadow: 0 0 20px #bfbfbf; }
+}
+
+.columna h3 {
+  text-align: center;
+}
+
+.columna p {
+  font-size: 12px !important;
+}
+
+.columna img {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+  width: 322px;
+  height: 200px;
+  max-width: 100%;
+  margin-top: 1rem;
+}

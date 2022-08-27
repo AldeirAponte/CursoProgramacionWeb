@@ -1,0 +1,225 @@
+body {
+  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* LAYOUT */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding: 5px;
+}
+
+.cabecera img {
+  max-width: 6vw;
+  min-width: 8vh;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 5vw;
+  text-shadow: 2px 4px 3px #b1b1b1;
+}
+
+footer {
+  background-color: #333;
+  color: #b1b1b1;
+  text-align: center;
+  font-style: italic;
+  padding: 0.1rem 0;
+  line-height: 35px;
+  margin-top: auto;
+}
+
+
+/* PAGINA DE LOGIN */
+.contenido {
+  background-color: rgb(157, 157, 157);
+  width: 35%;
+  border-radius: 15px;
+  margin-top: 5rem;
+  padding: 25px 20px 15px;
+}
+
+/* CONTENEDOR <i> e <input> */
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 97%;
+}
+
+/* BOTON DEL FORM LOGIN */
+.boton {
+  max-width: 20%;
+  min-width: 14vh;
+  position: relative;
+  left: 1.5rem;
+  background-color: #333;
+  border-color: #fffbfb;
+}
+
+.boton:hover {
+  background-color: rgb(105, 105, 105);
+  border-color: #333;
+  color: #333;
+}
+
+
+/* LOGOUT */
+.admin {
+  width: 20%;
+  margin: -5.5rem 0rem 1rem 68rem;
+  padding: 25px 20px 15px;
+}
+
+
+/* PAGINA COLECCION */
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  padding: 15px 0 0 0;
+  justify-content: center;
+}
+
+.columna {
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 8px;
+  margin: 8px;
+  text-align: justify;
+  background-color: rgb(219, 217, 217);
+  animation: mianimacion ease 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+  15% { box-shadow: 0 0 20px #bfbfbf; }
+  30% { box-shadow: 0 0 20px #333; }
+  50% { box-shadow: 0 0 20px #bfbfbf; }
+  70% { box-shadow: 0 0 20px #333; }
+  100% { box-shadow: 0 0 20px #bfbfbf; }
+}
+
+.columna h3 {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.columna p {
+  font-size: 12px;
+}
+
+.columna img {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+  width: 322px;
+  height: 200px;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.persona {
+  color: white;
+}
+
+.editar-borrar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editar-borrar a {
+  border-radius: 30%;
+}
+
+
+/* PAGINA AGREGAR Y EDITAR */
+.contenido-agregar {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contenido-agregar label {
+  font-weight: 500;
+}
+
+.agregar-columna {
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 25px;
+  margin: 8px auto;
+  text-align: justify;
+  background-color: rgb(219, 217, 217);
+}
+
+.agregar-columna h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+/* login */
+/* .input-container {
+  width: 280px;
+  position: relative;
+}
+.label {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
+}
+.text-input {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2f2c45;
+  background: #272530;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s;
+  color: #fff;
+}
+.label::before {
+  content: "";
+  height: 5px;
+  background: #272530;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+.text-input:focus {
+  border: 2px solid #7e4ccb;
+}
+.text-input:focus + .label, .filled {
+  top: -10px;
+  color: #7e4ccb;
+  font-size: 14px;
+}
+.text-input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.text-input:focus::placeholder {
+  opacity: 1;
+} */

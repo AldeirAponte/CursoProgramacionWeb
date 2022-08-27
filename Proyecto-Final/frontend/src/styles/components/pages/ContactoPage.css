@@ -1,0 +1,166 @@
+/* CONTACTO */
+.contenedor-dos {
+  max-width: 81%;
+  margin: 0 auto;
+}
+
+.contenedor-dos p {
+  font-size: 1vw;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.contactos {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.metodo-uno {
+  background-color: #8c9295;
+  /* background-color: #4a4242; */
+  border: 1px solid #333;
+  border-radius: 2%;
+  padding: 1.5%;
+  width: 60vw;
+  max-height: 40vw;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  background-size: 15vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/public/img/contacto/fondo.png");
+}
+
+.info h3 {
+  text-align: center;
+  margin: 0 0 12rem 0;
+  font-size: 1.3vw;
+}
+
+.info p {
+  text-align: center;
+}
+
+.titulo-form {
+  width: 100%;
+  border-left: 1px solid rgba(51, 51, 51, 0.133);
+}
+
+.titulo-form h2 {
+  text-align: center;
+}
+
+.formulario {
+  /* background-color: #4a4242; */
+  background-color: #333;
+  max-width: 85%;
+  margin: 1.5rem auto;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p input,
+.formulario p textarea {
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 23vw;
+  font-size: 1vw;
+  padding: 6px 10px;
+}
+
+.formulario label {
+  display: flex;
+  align-items: center;
+  min-width: 20%;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 19.7%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: rgb(88, 88, 88);
+  ;
+}
+
+.metodo-dos {
+  background-color: #dbdbdb;
+  width: 20vw;
+  max-height: 38vw;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.metodo-dos h2 {
+  margin-bottom: 10%;
+  font-size: 1.7vw;
+}
+
+.ubicacion {
+  max-width: 100%;
+  margin: 0;
+}
+
+.ubicacion h4 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+  max-width: 90%;
+}
+
+.ubicacion span {
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.redes-sociales {
+  max-width: 100%;
+}
+
+.canales {
+  background: #8c9295;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 20vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 30%;
+}
+
+.canal {
+  width: 2.5vw;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.canal:hover {
+  transform: scale(130%);
+}

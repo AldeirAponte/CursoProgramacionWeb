@@ -1,0 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #acacac;
+  background: linear-gradient(90deg, #acacac 0%, #c5c5c5 80%);
+  background: -webkit-linear-gradient(90deg, #acacac 0%, #c5c5c5 80%);
+  background: -moz-linear-gradient(90deg, #acacac 0%, #c5c5c5 80%);
+}

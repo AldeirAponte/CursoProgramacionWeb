@@ -1,0 +1,32 @@
+<div class="container contenido-agregar">
+  <div class="row">
+    <div class="col-6 offset-3 agregar-columna">
+      <h4>Editar un Item de Colección</h4>
+      <form action="/admin/coleccion/editar" method="post" class="agregar-columna" enctype="multipart/form-data">
+        <input type="hidden" value="{{itemColeccion.id}}" name="id">
+        {{!-- titulo --}}
+        <div class="mb-3 row">
+          <label for="">Titulo
+          <input type="text" class="form-control" name="titulo" value="{{itemColeccion.titulo}}"></label>
+        </div>
+        {{!-- informacion --}}
+        <div class="mb-3 row">
+          <label for="">Información
+          <textarea type="text" class="form-control" name="informacion">{{itemColeccion.informacion}}</textarea></label>
+        </div>
+        {{!-- imagen --}}
+        <div class="mb-3 row">
+          {{!-- ojo aqui al textarea no se le puede poner el atributo value --}}
+          <label for="">Imagen
+          <input type="file" class="form-control" name="imagen" /></label>
+          <label><input type="checkbox" name="img_delete" value="1">Eliminar imagen actual?</label>
+          <input type="hidden" name="img_original" value="{{itemColeccion.img_id}}" />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+      {{#if error}}
+      <p>{{message}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

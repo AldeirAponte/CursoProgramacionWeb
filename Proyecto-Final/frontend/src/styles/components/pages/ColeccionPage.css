@@ -1,0 +1,18 @@
+/* COLECCION */
+.contenedor-dos {
+  max-width: 81%;
+  margin: 0 auto;
+}
+
+.contenedor-dos p {
+  font-size: 1vw;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  padding: 15px 0 0 0;
+  justify-content: center;
+}
